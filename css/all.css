@@ -81,6 +81,22 @@ a {
   color: inherit;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mr-2 {
+  margin-right: 8px;
+}
+
 .container {
   max-width: 1296px;
   margin: 0 auto;
@@ -91,6 +107,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 80px 24px;
+}
+.article-popular {
+  border-radius: 50rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 6px 12px;
 }
 
 .card {
@@ -117,6 +139,7 @@ a {
 }
 .card-time {
   margin-bottom: 4px;
+  display: inline-block;
 }
 .card-title {
   font-weight: 700;

@@ -33,17 +33,41 @@ a {
   color: inherit;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mr-2 {
+  margin-right: 8px;
+}
+
 .container {
   max-width: 1296px;
   margin: 0 auto;
   padding: 0 12px;
 }
-
-.article-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 80px 24px;
+.article {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px 24px;
+  }
+  &-popular {
+    border-radius: 50rem;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 6px 12px;
+  }
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -63,6 +87,7 @@ a {
   }
   &-time {
     margin-bottom: 4px;
+    display: inline-block;
   }
   &-title {
     font-weight: 700;
