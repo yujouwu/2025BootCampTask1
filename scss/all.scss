@@ -1,0 +1,90 @@
+// css reset
+@import './base/reset';
+
+// google font - Noto Sans Traditional Chinese
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+:root {
+  --color-primary: #0027D5;
+  --color-secondary: #4B4B4B;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  // outline: 1px solid red;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 24px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media (min-width: 576px) {
+    width: calc(50% - 12px);
+  }
+  @media (min-width: 992px) {
+    width: calc(33.333% - 16px);
+  }
+  &-head {
+    margin-bottom: 16px;
+  }
+  .hashtag {
+    color: var(--color-primary);
+    font-size: 24px;
+  }
+  &-time {
+    margin-bottom: 4px;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  &-text {
+    margin-bottom: 16px;
+    color: var(--color-secondary);
+  }
+  &-footer {
+    margin-top: auto;
+  }
+  &-btn {
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    padding: 8px 16px;
+    border-radius: 50rem;
+    transition: all 0.3s ease;;
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+}
